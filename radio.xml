@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="boy"
+            android:checked="true"
+            android:textColor="#FF6600"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="girl"
+            android:textColor="#FF6600"
+            android:textSize="18sp"
+            />
+        <RadioGroup
+            android:id="@+id/rg_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rg_1"
+            android:layout_marginTop="30dp">
+            <RadioButton
+                android:id="@+id/rb_3"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="boy"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:background="@drawable/bg_btn5"
+                />
+            <RadioButton
+                android:id="@+id/rb_4"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="girl"
+                android:gravity="center"
+                android:button="@null"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_btn5"
+                />
+        </RadioGroup>
+    </RadioGroup>
+
+
+
+</RelativeLayout>
